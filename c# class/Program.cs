@@ -198,3 +198,92 @@ Console.WriteLine("Hello, World!");
 //        Console.WriteLine(a + " is Odd Number");
 //    }
 //}
+
+//Console.WriteLine("WHILE LOOP");
+
+//Console.WriteLine("Please enter your Age");
+//int age = int.Parse(Console.ReadLine());
+
+//Console.WriteLine("Enter your pocket money");
+//int counter = int.Parse(Console.ReadLine());
+
+//while  (counter <= 850 && age>=18)
+//{
+//    Console.WriteLine(counter);
+//    counter = counter + 1;
+//}
+
+Console.WriteLine("WHILE LOOP WITH if else condition");
+
+int i, cus;
+
+Console.WriteLine("Let's play the game");
+Console.WriteLine("You have only 3 attempts");
+int a = 0;
+i = 13;
+cus = 0;
+
+
+while (i != cus && a != 4)
+{
+    if(a==4)
+    {
+
+        Console.WriteLine( "you exceed the limit" );
+
+    }
+    Console.WriteLine("Enter the number between 1 to 20");
+    cus = Convert.ToInt32(Console.ReadLine());
+   
+    else if (cus < i )
+    {
+        
+           
+        
+        Console.WriteLine("Number is too low");
+    }
+    else if (cus > i )
+    {
+        
+           
+        
+        Console.WriteLine("Number is too high");
+    }
+    else
+    {
+        Console.WriteLine("Congratulations! You won the Game");
+        break;
+    }
+
+
+    a++;
+    
+
+}
+
+//Console.WriteLine("Sorry! you failed");
+
+//string userChoice = string.Empty;
+
+//do
+//{
+//    Console.WriteLine("enter your target?");
+//    int userTarget = int.Parse(Console.ReadLine());
+
+//    int counter = 10;
+//    //Console.WriteLine("tra again");
+
+//    while(counter<=userTarget)
+//    {
+//        Console.WriteLine(counter + " ");
+//        counter = counter + 1;
+//    }
+//    do
+//    {
+//        Console.WriteLine("Do you want to continue - Yes or No?");
+//        userChoice = Console.ReadLine().ToUpper();
+//    }
+//    while (userChoice != "YES" && userChoice != "NO");
+
+//}
+//while (userChoice == "YES");
