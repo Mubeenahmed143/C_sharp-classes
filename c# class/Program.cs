@@ -213,53 +213,53 @@ Console.WriteLine("Hello, World!");
 //    counter = counter + 1;
 //}
 
-Console.WriteLine("WHILE LOOP WITH if else condition");
+//Console.WriteLine("WHILE LOOP WITH if else condition");
 
-int i, cus;
+//int i, cus;
 
-Console.WriteLine("Let's play the game");
-Console.WriteLine("You have only 3 attempts");
-int a = 0;
-i = 13;
-cus = 0;
-
-
-while (i != cus && a != 4)
-{
-    if(a==4)
-    {
-
-        Console.WriteLine( "you exceed the limit" );
-
-    }
-    Console.WriteLine("Enter the number between 1 to 20");
-    cus = Convert.ToInt32(Console.ReadLine());
-   
-    else if (cus < i )
-    {
-        
-           
-        
-        Console.WriteLine("Number is too low");
-    }
-    else if (cus > i )
-    {
-        
-           
-        
-        Console.WriteLine("Number is too high");
-    }
-    else
-    {
-        Console.WriteLine("Congratulations! You won the Game");
-        break;
-    }
+//Console.WriteLine("Let's play the game");
+//Console.WriteLine("You have only 3 attempts");
+//int a = 0;
+//i = 13;
+//cus = 0;
 
 
-    a++;
-    
+//while (i != cus && a != 4)
+//{
+//    if(a==4)
+//    {
 
-}
+//        Console.WriteLine( "you exceed the limit" );
+
+//    }
+//    Console.WriteLine("Enter the number between 1 to 20");
+//    cus = Convert.ToInt32(Console.ReadLine());
+
+//    else if (cus < i )
+//    {
+
+
+
+//        Console.WriteLine("Number is too low");
+//    }
+//    else if (cus > i )
+//    {
+
+
+
+//        Console.WriteLine("Number is too high");
+//    }
+//    else
+//    {
+//        Console.WriteLine("Congratulations! You won the Game");
+//        break;
+//    }
+
+
+//    a++;
+
+
+//}
 
 //Console.WriteLine("Sorry! you failed");
 
@@ -287,3 +287,76 @@ while (i != cus && a != 4)
 
 //}
 //while (userChoice == "YES");
+
+
+Console.WriteLine("Array and array with for each and for loop");
+
+//int[] a = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+
+
+//for (int i = 0; i < a.Length; i++)
+//{
+//    Console.WriteLine(i + " . " + a[i]);
+//}
+
+
+//foreach (int i in a)
+//{
+//    Console.WriteLine(i);
+//}
+
+
+//Console.WriteLine(a[4]);
+
+
+//for (int i = 0; i < a.Length; i++)
+//{
+//    Console.WriteLine(a[6]);
+//}
+
+
+//int[] myarray = new int[6];
+//myarray[0] = 1;
+//myarray[1] = 2;
+//myarray[2] = 3;
+//myarray[3] = 4;
+//myarray[4] = 5;
+//myarray[5] = 6;
+
+//foreach (int i in myarray)
+//{
+//    Console.WriteLine(i);
+//}
+
+
+//int[] myarray = new int[3];
+
+//Console.WriteLine("enter the value of array");
+//for (int i = 0; i < myarray.Length; i++)
+//{
+//    myarray[i] = Convert.ToInt32(Console.ReadLine());
+
+//}
+
+//Array.Sort(myarray);
+//Array.Reverse(myarray);
+
+//foreach (int i in myarray)
+//{
+//    Console.WriteLine("Output " + i);
+//}
+
+Console.WriteLine("2-DIMENSIONAL ARRAY");
+
+int[,] a = new int[4,4] { { 1, 2, 3, 4 }, { 5, 6, 7, 8 }, { 9, 10, 11, 12 }, { 13, 14, 15, 16 } };
+
+
+for (int i = 0; i < 4;  i++)
+{
+    Console.WriteLine("Row : " + i) ;
+    for(int j = 0; j < 4; j++)
+    {
+        Console.WriteLine("Column : " + j);
+        Console.WriteLine("Elements of 2d-Array : " + a[i, j]);
+    }
+}
