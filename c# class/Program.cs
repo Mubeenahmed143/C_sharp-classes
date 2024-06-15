@@ -1,4 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using c__class;
+using System.Numerics;
 using System.Reflection.Metadata;
 using System.Security.Cryptography;
 
@@ -346,17 +348,84 @@ Console.WriteLine("Array and array with for each and for loop");
 //    Console.WriteLine("Output " + i);
 //}
 
-Console.WriteLine("2-DIMENSIONAL ARRAY");
+//Console.WriteLine("2-DIMENSIONAL ARRAY");
 
-int[,] a = new int[4,4] { { 1, 2, 3, 4 }, { 5, 6, 7, 8 }, { 9, 10, 11, 12 }, { 13, 14, 15, 16 } };
+//int[,] a = new int[4,4] { { 1, 2, 3, 4 }, { 5, 6, 7, 8 }, { 9, 10, 11, 12 }, { 13, 14, 15, 16 } };
 
 
-for (int i = 0; i < 4;  i++)
-{
-    Console.WriteLine("Row : " + i) ;
-    for(int j = 0; j < 4; j++)
-    {
-        Console.WriteLine("Column : " + j);
-        Console.WriteLine("Elements of 2d-Array : " + a[i, j]);
-    }
-}
+//for (int i = 0; i < 4;  i++)
+//{
+//    Console.WriteLine("Row : " + i) ;
+//    for(int j = 0; j < 4; j++)
+//    {
+//        Console.WriteLine("Column : " + j);
+//        Console.WriteLine("Elements of 2d-Array : " + a[i, j]);
+//    }
+//}
+
+//Console.WriteLine("multidimensional array with user input");
+
+//Console.WriteLine("User input 2D-Array/Multi Dimensional Array");
+//int[,] matrix = new int[4, 4];
+
+//for (int row = 0; row < 4; row++)
+//{
+//    for (int col = 0; col < 4; col++)
+//    {
+
+//        Console.Write("Enter value for matrix [{0}, {1}] =", row, col);
+//        matrix[row, col] = (int)Convert.ToInt32(Console.ReadLine());
+//    }
+//}
+
+//Console.WriteLine("Your Matrix is : ");
+//for (int row = 0; row < 4; row++)
+//{
+//    for (int col = 0; col < 4; col++)
+//    {
+//        Console.Write(matrix[row, col] + " ");
+//    }
+//    Console.WriteLine();
+//}
+
+///////////////////////////////////////////////////////////////////////////////////
+
+//Console.WriteLine("Jagged ARRAY with user input");
+
+//int[][] jag = new int[4][];
+
+//for(int z = 0; z < 4; z++)
+//{
+//    jag[z] = new int[4];
+//}
+
+//for (int i = 0; i < 4; i++)
+//{
+//    for (int j = 0; j < 4
+//        ; j++)
+//    {
+//        Console.WriteLine("Enter value of matrix at position [" + i + "][" + j + "]:");
+//        jag[i][j] = Convert.ToInt32(Console.ReadLine());
+//    }
+//}
+
+//for (int a = 0; a<jag.Length; a++)
+//{
+//    for (int b = 0; b < jag[a].Length; b++)
+//    {
+//        Console.Write(jag[a][b] + " ");
+//    }
+//    Console.WriteLine();
+//}
+
+
+Car mehran = new Car();
+
+Console.WriteLine("car details");
+mehran.details(1200000, "Toyota", "sheikh sahab");
+
+Console.WriteLine("speed");
+mehran.speed(240);
+
+Console.WriteLine("model");
+mehran.model();
