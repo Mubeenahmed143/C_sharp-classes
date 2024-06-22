@@ -35,5 +35,9 @@ namespace c__class
         {
             Console.WriteLine("2024");
         }
+        public void start()
+        {
+            Console.WriteLine("parent class");
+        }
     }
 }

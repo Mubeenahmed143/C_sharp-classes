@@ -22,6 +22,7 @@ Console.WriteLine("Hello, World!");
 
 //Console.WriteLine(convert);
 
+////////////////////////////////////////////////////////////////////////////////////////
 
 //double pie = 3.142;
 
@@ -38,12 +39,16 @@ Console.WriteLine("Hello, World!");
 //cylinder = pie * r * r * h;
 //Console.WriteLine("The value of cylinder is =" + cylinder);
 
+//////////////////////////////////////////////////////////////////////////
+
 //Console.WriteLine("value of centigrade");
 //double cent = Convert.ToInt32(Console.ReadLine());
 //double answer;
 
 //answer = cent + 273;
 //Console.WriteLine(answer);
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 //Console.WriteLine("Enter your name");
 //string name = Console.ReadLine();
@@ -67,6 +72,8 @@ Console.WriteLine("Hello, World!");
 
 //Console.WriteLine("Enter your Age");
 //int age =Convert.ToInt32(Console.ReadLine());
+
+/////////////////////////////////////////////////////////////////////////////////////////
 
 //Console.WriteLine("Enter Pakistani Rupee");
 //decimal pkr = Convert.ToDecimal(Console.ReadLine());
@@ -107,6 +114,8 @@ Console.WriteLine("Hello, World!");
 //    Console.WriteLine("Something went wrong 'try again'");
 //};
 
+/////////////////////////////////////////////////////////////////////////////
+
 //Console.WriteLine("please enter a number");
 //int num = int.Parse(Console.ReadLine());
 
@@ -127,7 +136,9 @@ Console.WriteLine("Hello, World!");
 
 //}
 
-//Console.WriteLine("USA Coffee Shop");
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Console.WriteLine("Coffee with Karan");
 
 //int Coffee_Cost = 0;
 
@@ -201,6 +212,8 @@ Console.WriteLine("Hello, World!");
 //    }
 //}
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+
 //Console.WriteLine("WHILE LOOP");
 
 //Console.WriteLine("Please enter your Age");
@@ -214,6 +227,8 @@ Console.WriteLine("Hello, World!");
 //    Console.WriteLine(counter);
 //    counter = counter + 1;
 //}
+
+///////////////////////////////////////////////////////////////////////////////////////////////
 
 //Console.WriteLine("WHILE LOOP WITH if else condition");
 
@@ -290,8 +305,9 @@ Console.WriteLine("Hello, World!");
 //}
 //while (userChoice == "YES");
 
+////////////////////////////////////////////////////////////////////////////////////////////////////
 
-Console.WriteLine("Array and array with for each and for loop");
+//Console.WriteLine("Array and array with for each and for loop");
 
 //int[] a = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 
@@ -418,14 +434,42 @@ Console.WriteLine("Array and array with for each and for loop");
 //    Console.WriteLine();
 //}
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-Car mehran = new Car();
+//Console.WriteLine("Class and Methods");
 
-Console.WriteLine("car details");
-mehran.details(1200000, "Toyota", "sheikh sahab");
+//Car mehran = new Car();
 
-Console.WriteLine("speed");
-mehran.speed(240);
+//Console.WriteLine("car details");
+//mehran.details(1200000, "Toyota", "sheikh sahab");
 
-Console.WriteLine("model");
-mehran.model();
+//Console.WriteLine("speed");
+//mehran.speed(240);
+
+//Console.WriteLine("model");
+//mehran.model();
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+//Console.WriteLine("constructor and destructor");
+
+//sTUDENT s1 = new sTUDENT();
+//sTUDENT s2 = new sTUDENT(34, "sahab");
+
+///////////////////////////////////////////////////////////////
+
+//Console.WriteLine("Inheritance");
+
+//CarChild c1 = new CarChild();
+//c1.child_speed();
+//c1.start();
+
+//Console.WriteLine(".");
+//Car C2 = new Car();
+//C2.start();
+
+//Console.WriteLine(".");
+//g_child g1 = new g_child();
+//g1.child_speed();
+//g1.start();
+//g1.corolla();
+
