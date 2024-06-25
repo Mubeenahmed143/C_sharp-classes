@@ -473,3 +473,21 @@ Console.WriteLine("Hello, World!");
 //g1.start();
 //g1.corolla();
 
+///////////////////////////////////////////////////////////////////////////
+
+static void merafunction()
+{
+
+    Student s1 = new Student(45);
+    Student s2 = new Student(45);
+
+
+
+}
+
+merafunction();
+GC.Collect();
+GC.WaitForPendingFinalizers();
+
+
+
