@@ -475,19 +475,34 @@ Console.WriteLine("Hello, World!");
 
 ///////////////////////////////////////////////////////////////////////////
 
-static void merafunction()
-{
+//static void merafunction()
+//{
 
-    Student s1 = new Student(45);
-    Student s2 = new Student(45);
-
-
-
-}
-
-merafunction();
-GC.Collect();
-GC.WaitForPendingFinalizers();
+//    Student s1 = new Student(45);
+//    Student s2 = new Student(45);
 
 
 
+//}
+
+//merafunction();
+//GC.Collect();
+//GC.WaitForPendingFinalizers();
+
+//////////////////////////////////////////////////////////////////////////////
+//Console.WriteLine("2nd Pillar Polymorphism");
+
+//Console.WriteLine("override method");
+//Son1 s1 = new Son1();
+//s1.relate();
+
+//Console.WriteLine("overload method");
+//Visit v1 = new Visit();
+//v1.eating();
+//v1.eating("Biryani");
+//v1.eating(2);
+
+///////////////////////////////////////////////////////////////////////////////////////
+Console.WriteLine("Encapsulation");
+
+Father.age = 44;
