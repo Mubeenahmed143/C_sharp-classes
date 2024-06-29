@@ -506,3 +506,12 @@ Console.WriteLine("Hello, World!");
 Console.WriteLine("Encapsulation");
 
 Father.age = 44;
+
+//////////////////////////////////////////////////////////////////////
+////////////Console.WriteLine("Abstraction ");///////////////////
+///
+Senior_Emp s1 = new Senior_Emp();
+
+///////////////////Console.WriteLine("Interface");///////////////////////////////
+///
+Onedown_Sol m1 = new Onedown_Sol();
