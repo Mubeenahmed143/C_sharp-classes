@@ -8,5 +8,6 @@ namespace c__class
 {
     internal interface Hr
     {
+        public void Hiring();
     }
 }

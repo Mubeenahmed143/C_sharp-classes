@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace c__class
 {
-    internal class Employee
+    internal abstract class Employee
     {
+        public void salary()
+        {
+            Console.WriteLine("hello");
+        }
+
+        public abstract void awards();
     }
 }

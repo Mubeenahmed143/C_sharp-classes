@@ -503,15 +503,77 @@ Console.WriteLine("Hello, World!");
 //v1.eating(2);
 
 ///////////////////////////////////////////////////////////////////////////////////////
-Console.WriteLine("Encapsulation");
+//Console.WriteLine("Encapsulation");
 
-Father.age = 44;
+//Father.age = 44;
 
 //////////////////////////////////////////////////////////////////////
 ////////////Console.WriteLine("Abstraction ");///////////////////
 ///
-Senior_Emp s1 = new Senior_Emp();
+//Senior_Emp s1 = new Senior_Emp();
 
 ///////////////////Console.WriteLine("Interface");///////////////////////////////
 ///
-Onedown_Sol m1 = new Onedown_Sol();
+//Onedown_Sol m1 = new Onedown_Sol();
+
+/////////////////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////Console.WriteLine("Indexers");/////////////////////////////////////////////
+
+//IndexerClass std = new IndexerClass();
+//std[0] = "Mubeen";
+//std[1] = "Murtaza";
+//std[2] = "Zaid";
+//std[3] = "Hanif";
+//std[4] = "Hassan";
+
+//for (int i=0; i<5; i++)
+//{
+//    Console.WriteLine(std[i]);
+//}
+
+//IndexerClass sal = new IndexerClass();
+//sal[0,0] = 33000;
+//sal[1,1] = 44000;
+//sal[2,2] = 55000;
+//sal[3,3] = 66000;
+
+//for (int j=0; j<4; j++)
+//{
+//    for(int k = 0; k<j; k++)
+//    {
+//        Console.WriteLine(sal[j , k]);
+//    }
+
+//}
+
+////////////////////////////////////////////////////////////////////////
+/////////////////Console.WriteLine("parameters type");//////////////////////
+
+//public class Example
+//{
+    
+//   //////Value parameter example////
+
+//    public void DisplayValue(int x)
+//    {
+//        Console.WriteLine("Value: " + x);
+//    }
+//    ///Refrence parameter example///
+//    public void Increament(ref int x)
+//    {
+//        x++;
+//    }
+
+//    ///Output parameter example///
+//    public void GetValues(out int x,out int y)
+//    {
+//        x = 10;
+//        y = 20;
+//    }
+//}
+
+//Example e = new Example();
+//e.DisplayValue(8);
+//e.Increament(4);
+//e.GetValues(33.55);
