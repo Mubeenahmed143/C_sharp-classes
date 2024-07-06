@@ -1,5 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using c__class;
+
+using System.Collections;
 using System.Numerics;
 using System.Reflection.Metadata;
 using System.Security.Cryptography;
@@ -527,22 +529,22 @@ Console.WriteLine("Hello, World!");
 //std[3] = "Hanif";
 //std[4] = "Hassan";
 
-//for (int i=0; i<5; i++)
+//for (int i = 0; i < 5; i++)
 //{
 //    Console.WriteLine(std[i]);
 //}
 
 //IndexerClass sal = new IndexerClass();
-//sal[0,0] = 33000;
-//sal[1,1] = 44000;
-//sal[2,2] = 55000;
-//sal[3,3] = 66000;
+//sal[0, 0] = 33000;
+//sal[1, 1] = 44000;
+//sal[2, 2] = 55000;
+//sal[3, 3] = 66000;
 
-//for (int j=0; j<4; j++)
+//for (int j = 0; j < sal[1,1]; j++)
 //{
-//    for(int k = 0; k<j; k++)
+//    for (int k = 0; k < j; k++)
 //    {
-//        Console.WriteLine(sal[j , k]);
+//        Console.WriteLine(sal[k,j]);
 //    }
 
 //}
@@ -552,7 +554,7 @@ Console.WriteLine("Hello, World!");
 
 //public class Example
 //{
-    
+
 //   //////Value parameter example////
 
 //    public void DisplayValue(int x)
@@ -577,3 +579,27 @@ Console.WriteLine("Hello, World!");
 //e.DisplayValue(8);
 //e.Increament(4);
 //e.GetValues(33.55);
+
+////////////////////////////////////////////////////////
+
+//////Console.WriteLine("Collections");/////
+
+ArrayList movies = new ArrayList();
+
+movies.Add("Pathan");
+movies.Add("Jawan");
+movies.Add(1920);
+movies.Add("pk");
+movies.Add("DDLJ");
+
+movies.Insert(2, "pk");
+
+movies.Remove("pk");
+movies.RemoveAt(2);
+
+foreach (var a in movies)
+{
+    Console.WriteLine(a);
+}
+
+Console.WriteLine();
