@@ -8,6 +8,8 @@ namespace c__class
 {
     internal class Senior_Emp : Employee
     {
+    
+
         public override void awards()
         {
             throw new NotImplementedException();
@@ -17,5 +19,6 @@ namespace c__class
         {
             Console.WriteLine(" chl bhai paisa nikal");
         }
+    
     }
 }

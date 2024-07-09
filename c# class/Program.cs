@@ -584,22 +584,104 @@ Console.WriteLine("Hello, World!");
 
 //////Console.WriteLine("Collections");/////
 
-ArrayList movies = new ArrayList();
+//ArrayList movies = new ArrayList();
 
-movies.Add("Pathan");
-movies.Add("Jawan");
-movies.Add(1920);
-movies.Add("pk");
-movies.Add("DDLJ");
+//movies.Add("Pathan");
+//movies.Add("Jawan");
+//movies.Add(1920);
+//movies.Add("pk");
+//movies.Add("DDLJ");
 
-movies.Insert(2, "pk");
+//movies.Insert(2, "pk");
 
-movies.Remove("pk");
-movies.RemoveAt(2);
+//movies.Remove("pk");
+//movies.RemoveAt(2);
 
-foreach (var a in movies)
+//foreach (var a in movies)
+//{
+//    Console.WriteLine(a);
+//}
+
+//Console.WriteLine();
+
+///////////////////////////////////////////////////'
+///Console.WriteLine("Exception (Error Handling)");///
+
+///Exception///
+try
 {
-    Console.WriteLine(a);
+    int aa = 90;
+    int bb = 40;
+    int cc = aa + bb;
+    Console.WriteLine(cc);
 }
+catch(Exception ex)
+{
+    Console.WriteLine(ex);
+}
+Console.WriteLine(" ");
+///Arithmetic Exception///
+try
+{
+    int a = 90;
+    int res = a / 0;
+    Console.WriteLine(res);
+}
+catch (ArithmeticException abc)
+{
+    Console.WriteLine(abc);
+}
+Console.WriteLine(" ");
+///Invalid Cast Exception///
+try
+{
+    float f = 23.4f;
+    object o = f;
+    int b = (int)o;
+    Console.WriteLine(b);
+}
+catch(InvalidCastException ix)
+{
+    Console.WriteLine("Message: {0}", ix.Message);
+    Console.WriteLine("Error: {0}", ix);
+}
+Console.WriteLine(" ");
+///Array Type Mismatch ///
 
-Console.WriteLine();
+try
+{
+    string[] names = { "Mubeen", "Murtaza", "Zaid" };
+    int[] id = new int[3];
+    names.CopyTo(id, 0);
+}
+catch(ArrayTypeMismatchException am)
+{
+    Console.WriteLine("Message:  {0}",am.Message);
+    Console.WriteLine("Error: {0}",am);
+}
+Console.WriteLine(" ");
+///(Index_out_of_range)///
+try
+{
+    string[] actors = new string[] { "Mubeen", "Murtaza", "Zaid" };
+    Console.WriteLine(actors[4]);
+}
+catch(IndexOutOfRangeException rx)
+{
+    Console.WriteLine("Message: {0}",rx.Message);
+    Console.WriteLine("Error: {0}",rx);
+}
+Console.WriteLine(" ");
+///Overflow Exception///
+byte numOne = 200;
+byte numTwo = 6;
+byte result = 0;
+try
+{
+    result = checked((byte)(numOne * numTwo));
+    Console.WriteLine("Result = {0}", result);
+}
+catch(OverflowException objx)
+{
+    Console.WriteLine("Error Description: {0}", objx.ToString());
+}
