@@ -245,23 +245,23 @@ Console.WriteLine("Hello, World!");
 
 //while (i != cus && a != 4)
 //{
-//    if(a==4)
+//    if (a == 4)
 //    {
 
-//        Console.WriteLine( "you exceed the limit" );
+//        Console.WriteLine("you exceed the limit");
 
 //    }
 //    Console.WriteLine("Enter the number between 1 to 20");
 //    cus = Convert.ToInt32(Console.ReadLine());
 
-//    else if (cus < i )
+//    else if (cus < i)
 //    {
 
 
 
 //        Console.WriteLine("Number is too low");
 //    }
-//    else if (cus > i )
+//    else if (cus > i)
 //    {
 
 
@@ -608,85 +608,114 @@ Console.WriteLine("Hello, World!");
 ///Console.WriteLine("Exception (Error Handling)");///
 
 ///Exception///
-try
-{
-    int aa = 90;
-    int bb = 40;
-    int cc = aa + bb;
-    Console.WriteLine(cc);
-}
-catch(Exception ex)
-{
-    Console.WriteLine(ex);
-}
-Console.WriteLine(" ");
-///Arithmetic Exception///
-try
-{
-    int a = 90;
-    int res = a / 0;
-    Console.WriteLine(res);
-}
-catch (ArithmeticException abc)
-{
-    Console.WriteLine(abc);
-}
-Console.WriteLine(" ");
-///Invalid Cast Exception///
-try
-{
-    float f = 23.4f;
-    object o = f;
-    int b = (int)o;
-    Console.WriteLine(b);
-}
-catch(InvalidCastException ix)
-{
-    Console.WriteLine("Message: {0}", ix.Message);
-    Console.WriteLine("Error: {0}", ix);
-}
-Console.WriteLine(" ");
-///Array Type Mismatch ///
+//try
+//{
+//    int aa = 90;
+//    int bb = 40;
+//    int cc = aa + bb;
+//    Console.WriteLine(cc);
+//}
+//catch(Exception ex)
+//{
+//    Console.WriteLine(ex);
+//}
+//Console.WriteLine(" ");
+/////Arithmetic Exception///
+//try
+//{
+//    int a = 90;
+//    int res = a / 0;
+//    Console.WriteLine(res);
+//}
+//catch (ArithmeticException abc)
+//{
+//    Console.WriteLine(abc);
+//}
+//Console.WriteLine(" ");
+/////Invalid Cast Exception///
+//try
+//{
+//    float f = 23.4f;
+//    object o = f;
+//    int b = (int)o;
+//    Console.WriteLine(b);
+//}
+//catch(InvalidCastException ix)
+//{
+//    Console.WriteLine("Message: {0}", ix.Message);
+//    Console.WriteLine("Error: {0}", ix);
+//}
+//Console.WriteLine(" ");
+/////Array Type Mismatch ///
 
-try
+//try
+//{
+//    string[] names = { "Mubeen", "Murtaza", "Zaid" };
+//    int[] id = new int[3];
+//    names.CopyTo(id, 0);
+//}
+//catch(ArrayTypeMismatchException am)
+//{
+//    Console.WriteLine("Message:  {0}",am.Message);
+//    Console.WriteLine("Error: {0}",am);
+//}
+//Console.WriteLine(" ");
+/////(Index_out_of_range)///
+//try
+//{
+//    string[] actors = new string[] { "Mubeen", "Murtaza", "Zaid" };
+//    Console.WriteLine(actors[4]);
+//}
+//catch(IndexOutOfRangeException rx)
+//{
+//    Console.WriteLine("Message: {0}",rx.Message);
+//    Console.WriteLine("Error: {0}",rx);
+//}
+//Console.WriteLine(" ");
+/////Overflow Exception///
+//byte numOne = 200;
+//byte numTwo = 6;
+//byte result = 0;
+//try
+//{
+//    result = checked((byte)(numOne * numTwo));
+//    Console.WriteLine("Result = {0}", result);
+//}
+//catch(OverflowException objx)
+//{
+//    Console.WriteLine("Error Description: {0}", objx.ToString());
+//    Console.WriteLine("Exception: {0}",objx.GetType());
+//    Console.WriteLine("Message: {0}",objx.Message);
+//    Console.WriteLine("Source: {0}", objx.Source);
+//    Console.WriteLine("TargetSite: {0}", objx.TargetSite);
+//    Console.WriteLine("StackTrace: {0}", objx.StackTrace);
+//}
+
+namespace Students
 {
-    string[] names = { "Mubeen", "Murtaza", "Zaid" };
-    int[] id = new int[3];
-    names.CopyTo(id, 0);
-}
-catch(ArrayTypeMismatchException am)
-{
-    Console.WriteLine("Message:  {0}",am.Message);
-    Console.WriteLine("Error: {0}",am);
-}
-Console.WriteLine(" ");
-///(Index_out_of_range)///
-try
-{
-    string[] actors = new string[] { "Mubeen", "Murtaza", "Zaid" };
-    Console.WriteLine(actors[4]);
-}
-catch(IndexOutOfRangeException rx)
-{
-    Console.WriteLine("Message: {0}",rx.Message);
-    Console.WriteLine("Error: {0}",rx);
-}
-Console.WriteLine(" ");
-///Overflow Exception///
-byte numOne = 200;
-byte numTwo = 6;
-byte result = 0;
-try
-{
-    result = checked((byte)(numOne * numTwo));
-    Console.WriteLine("Result = {0}", result);
-}
-catch(OverflowException objx)
-{
-    Console.WriteLine("Error Description: {0}", objx.ToString());
-    Console.WriteLine("Exception: {0}",objx.GetType());
-    Console.WriteLine("Message: {0}",objx.Message);
-    Console.WriteLine("Source: {0}", objx.Source);
-    Console.WriteLine("TargetSite: {0}", objx.TargetSite);
-    Console.WriteLine("StackTrace: {0}", objx.StackTrace);
+    class Meri
+    {
+        public Meri()
+        {
+            Console.WriteLine("Students");
+        }
+    }
+   
+    namespace Examination
+    {
+        class Meri
+        {
+            public Meri()
+            {
+                Console.WriteLine("Exam");
+            }
+            static void Main(string[] args)
+            {
+                Meri bv = new Meri();
+
+                Students.Meri aaa = new Students.Meri();
+
+            }
+        }
+    }
 }
