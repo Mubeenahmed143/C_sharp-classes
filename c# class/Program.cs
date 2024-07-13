@@ -740,14 +740,15 @@ Console.WriteLine("Hello, World!");
 ///////////////////////////////////////////////////////////////
 ///Console.WriteLine("Events & Delegates");///
 
-namespace @event
+namespace @event // Namespace declaration
 {
-
 	public class mycar
 	{
+		// Define a delegate for the event
 		public delegate void speedcar();
-		public event speedcar speedup;
 
+		// Define the event based on the delegate
+		public event speedcar speedup;
 
 		public int speed = 0;
 
@@ -756,17 +757,18 @@ namespace @event
 			for (int i = 0; i < 20; i++)
 			{
 				if (i >= 10)
-					speedup();
+					speedup(); // Invoke the event if subscribed  //?.Invoke()//
 				speed += i;
-                Console.WriteLine("current speed " + i);
+				Console.WriteLine("current speed " + i);  // <-speed//
 				System.Threading.Thread.Sleep(500);
-            }
+			}
 		}
 
+		// Static method to handle the event
 		public static void Mm_carmoved()
 		{
-            Console.WriteLine("car has exceed the limit");
-        }
+			Console.WriteLine("car has exceeded the limit");
+		}
 	}
 
 	class Program
@@ -774,7 +776,11 @@ namespace @event
 		static void Main(string[] args)
 		{
 			mycar mm = new mycar();
+
+			// Subscribe to the event with the static method
 			mm.speedup += new mycar.speedcar(mycar.Mm_carmoved);
+
+			// Start driving
 			mm.drive();
 		}
 	}
