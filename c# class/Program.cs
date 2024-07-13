@@ -691,31 +691,91 @@ Console.WriteLine("Hello, World!");
 //    Console.WriteLine("StackTrace: {0}", objx.StackTrace);
 //}
 
-namespace Students
+//namespace Students
+//{
+//    class Meri
+//    {
+//        public Meri()
+//        {
+//            Console.WriteLine("Students");
+//        }
+//    }
+
+//    namespace Examination
+//    {
+//        class Meri
+//        {
+//            public Meri()
+//            {
+//                Console.WriteLine("Exam");
+//            }
+//            static void Main(string[] args)
+//            {
+//                Meri bv = new Meri();
+
+//                Students.Meri aaa = new Students.Meri();
+
+//            }
+//        }
+//    }
+//}
+
+////////////////////////////////////////////////////////////////////////////////////
+
+///Console.WriteLine("Delegates");////
+///
+//Calculator.calculator cal = new Calculator.calculator(Calculator.add);
+//Console.WriteLine("Addition : " + cal(25, 6));
+
+//Calculator.calculator c_sub = new Calculator.calculator(Calculator.sub);
+//Console.WriteLine("Subtraction : " + c_sub(25, 6));
+
+//Calculator.calculator c_mul = new Calculator.calculator(Calculator.mul);
+//Console.WriteLine("Multiplication : " + c_mul(25, 6));
+
+////Error aae ga//
+//Calculator.calculator c_div = new Calculator.calculator(Calculator.div);
+//Console.WriteLine("Divition : " + c_mul(25, 6));
+
+///////////////////////////////////////////////////////////////
+///Console.WriteLine("Events & Delegates");///
+
+namespace @event
 {
-    class Meri
-    {
-        public Meri()
-        {
-            Console.WriteLine("Students");
-        }
-    }
-   
-    namespace Examination
-    {
-        class Meri
-        {
-            public Meri()
-            {
-                Console.WriteLine("Exam");
-            }
-            static void Main(string[] args)
-            {
-                Meri bv = new Meri();
 
-                Students.Meri aaa = new Students.Meri();
+	public class mycar
+	{
+		public delegate void speedcar();
+		public event speedcar speedup;
 
+
+		public int speed = 0;
+
+		public void drive()
+		{
+			for (int i = 0; i < 20; i++)
+			{
+				if (i >= 10)
+					speedup();
+				speed += i;
+                Console.WriteLine("current speed " + i);
+				System.Threading.Thread.Sleep(500);
             }
+		}
+
+		public static void Mm_carmoved()
+		{
+            Console.WriteLine("car has exceed the limit");
         }
-    }
+	}
+
+	class Program
+	{
+		static void Main(string[] args)
+		{
+			mycar mm = new mycar();
+			mm.speedup += new mycar.speedcar(mycar.Mm_carmoved);
+			mm.drive();
+		}
+	}
 }
